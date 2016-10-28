@@ -57,6 +57,6 @@ Spec List:
   - Example Input: 15
   - Example Output: [1,2,"ping", 4, "pong", "ping", 7, 8, "ping", "pong", 11, "ping", 13, 14, "ping-pong"]
 
-5) It can return an alert to tell the user to only input numbers if they attempt to input any other type of character.  
-  - Example Input: Q
-  - Example Output: Alert("enter numbers only please");
+5) It can only receive input in the form of numbers that are greater than or equal to one.  
+  - Example Attempted Input: e
+  - Example Output: "please enter a number."

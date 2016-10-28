@@ -25,7 +25,7 @@ $(document).ready(function(){
     var results = pingPong(input);
     // $("#output").text(result);
     results.forEach(function(result) {
-        $("ul").append("<li>" + result + "</li>");
+        $("ul#answer").append("<li>" + result + "</li>");
     });
   });
 });
