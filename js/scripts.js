@@ -5,6 +5,8 @@ var countedNumbers = [];
 for (var i = 1; i <= countToNum; i ++) {
   if (i % 3 == 0) {
     countedNumbers.push("ping");
+  } else if (i % 5 == 0) {
+    countedNumbers.push("pong");
   } else {
     countedNumbers.push(i);
     }
