@@ -59,4 +59,4 @@ Spec List:
 
 5) It can return an alert to tell the user to only input numbers if they attempt to input any other type of character.  
   - Example Input: Q
-  - Example Output: Alert("Please enter numbers only please");
+  - Example Output: Alert("enter numbers only please");
