@@ -1,20 +1,19 @@
 //BACK END
-function pingPong (countTo) {
-  // if (countTo )
-    var countToNum = parseInt(countTo);
-    var countedNumbers = [];
-    for (var i = 1; i <= countToNum; i ++) {
+function pingPong (input) {
+    var parseNumbers = parseInt(input);
+    var numbersArray = [];
+    for (var i = 1; i <= parseNumbers; i ++) {
       if (i % 3 == 0 && i % 5 != 0 && i % 15 != 0) {
-        countedNumbers.push("ping");
+        numbersArray.push("ping");
       } else if (i % 5 == 0 && i % 15 != 0 && i % 3 != 0) {
-        countedNumbers.push("pong");
+        numbersArray.push("pong");
       } else if (i % 15 == 0) {
-        countedNumbers.push("ping-pong");
+        numbersArray.push("ping-pong");
       } else {
-        countedNumbers.push(i);
+        numbersArray.push(i);
         }
       };
-      return countedNumbers;
+      return numbersArray;
 };
 
 // function pingPong (countTo) {
@@ -44,8 +43,8 @@ $(document).ready(function(){
   $("form").submit(function(event){
     event.preventDefault();
 
-    var countTo = $("#countTo").val();
-    var result = pingPong(countTo);
+    var input = $("#input").val();
+    var result = pingPong(input);
     $("#output").text(result);
   });
 });
