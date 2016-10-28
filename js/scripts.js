@@ -1,19 +1,20 @@
 //BACK END
 function pingPong (countTo) {
-var countToNum = parseInt(countTo);
-var countedNumbers = [];
-for (var i = 1; i <= countToNum; i ++) {
-  if (i % 3 == 0 && i % 5 != 0 && i % 15 != 0) {
-    countedNumbers.push("ping");
-  } else if (i % 5 == 0 && i % 15 != 0 && i % 3 != 0) {
-    countedNumbers.push("pong");
-  } else if (i % 15 == 0) {
-    countedNumbers.push("ping-pong");
-  } else {
-    countedNumbers.push(i);
-    }
-  };
-  return countedNumbers;
+  // if (countTo )
+    var countToNum = parseInt(countTo);
+    var countedNumbers = [];
+    for (var i = 1; i <= countToNum; i ++) {
+      if (i % 3 == 0 && i % 5 != 0 && i % 15 != 0) {
+        countedNumbers.push("ping");
+      } else if (i % 5 == 0 && i % 15 != 0 && i % 3 != 0) {
+        countedNumbers.push("pong");
+      } else if (i % 15 == 0) {
+        countedNumbers.push("ping-pong");
+      } else {
+        countedNumbers.push(i);
+        }
+      };
+      return countedNumbers;
 };
 
 // function pingPong (countTo) {
