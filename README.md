@@ -60,16 +60,3 @@ Spec List:
 5) It can return an alert to tell the user to only input numbers if they attempt to input any other type of character.  
   - Example Input: Q
   - Example Output: Alert("enter numbers only please");
-
-  function pingPong (countTo) {
-  var countToNum = parseInt(countTo);
-  var countedNumbers = [];
-  for (var i = 1; i <= countToNum; i += 1) {
-    if (i % 3 === 0) {
-      countedNumbers.push("string");
-    } else {
-      countedNumbers.push(i);
-    }
-    return countedNumbers;
-    }
-  };
